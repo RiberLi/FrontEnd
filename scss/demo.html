@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>测试</title>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+</head>
+
+<body>
+<div class="new-feature-guide">
+    <div class="feature-guide-box">
+        <div class="guide-content" data-bind="attr: { 'index': count() }">
+            <div class="guide-arrow"></div>
+            <span class="guide-index" data-bind="text: count() + 1, visible: enableShowIndex"></span>
+            <button class="guide-btn" data-bind="click: showNext, css: { known: isLast }"></button>
+        </div>
+        <div class="guide-cover"></div>
+    </div>
+</div>
+</body>
+
+</html>
