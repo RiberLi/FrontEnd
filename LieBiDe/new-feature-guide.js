@@ -12,17 +12,16 @@ NewFeatureGuide.prototype.showFeature=function(){
        $featureClone.appendTo(this.$guideBox);
 
        this.$el.show();
-       var offset=$featureBox.offset;
+       var offset=$featureBox.offset();
        this.$guideBox.css({
        	left:offset.left,
        	top:offset.top
        })
-
 };
 
 $(function(){
 	var newFeatureGuide=new NewFeatureGuide({
-		newFeature:".luck-money-broadcast",
+		newFeature:".broadcast-wrapper",
         tpl:".new-feature-guide"
 	})
 	newFeatureGuide.showFeature();
